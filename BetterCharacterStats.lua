@@ -175,8 +175,9 @@ function BCS:OnEvent()
 		-- Debounce: wait 200ms after last change before scanning
 		inventoryDebounceTimer = 0.2
 		inventoryDebouncePending = true
-	elseif event == "ADDON_LOADED" and arg1 == "BetterCharacterStats" then
+	elseif event == "ADDON_LOADED" and arg1 == "BetterCharacterStats-OctoWoW" then
 		BCSFrame:UnregisterEvent("ADDON_LOADED")
+		BCSConfig = BCSConfig or {}
 
 		BCS.needScanGear = true
 		BCS.needScanTalents = true
