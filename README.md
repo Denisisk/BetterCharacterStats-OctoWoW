@@ -19,4 +19,4 @@ This version is designed specifically for TurtleWoW and its custom changes.
 Moh, Bennylava, Lexie, Spit, Pepopo, Otari98
 
 ## Localization
-To add a new localization or fix a mistake, write in the Discord topic or create a new pull request.
+To add a new localization or fix a mistake, write in the Discord topic([link](https://discord.com/channels/1499908924906672188/1517864574269784135)) or create a new pull request.
