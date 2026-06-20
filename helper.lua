@@ -1655,39 +1655,39 @@ function BCS:GetWeaponSkill(skillName)
 end
 
 function BCS:GetWeaponSkillForWeaponType(weaponType)
-	if weaponType == "Daggers" then
-		return BCS:GetWeaponSkill("Daggers")
-	elseif weaponType == "One-Handed Swords" then
-		return BCS:GetWeaponSkill("Swords")
-	elseif weaponType == "Two-Handed Swords" then
-		return BCS:GetWeaponSkill("Two-Handed Swords")
-	elseif weaponType == "One-Handed Axes" then
-		return BCS:GetWeaponSkill("Axes")
-	elseif weaponType == "Two-Handed Axes" then
-		return BCS:GetWeaponSkill("Two-Handed Axes")
-	elseif weaponType == "One-Handed Maces" then
-		return BCS:GetWeaponSkill("Maces")
-	elseif weaponType == "Two-Handed Maces" then
-		return BCS:GetWeaponSkill("Two-Handed Maces")
-	elseif weaponType == "Staves" then
-		return BCS:GetWeaponSkill("Staves")
-	elseif weaponType == "Polearms" then
-		return BCS:GetWeaponSkill("Polearms")
-	elseif weaponType == "Fist Weapons" then
-		return BCS:GetWeaponSkill("Unarmed")
-	elseif weaponType == "Bows" then
-		return BCS:GetWeaponSkill("Bows")
-	elseif weaponType == "Crossbows" then
-		return BCS:GetWeaponSkill("Crossbows")
-	elseif weaponType == "Guns" then
-		return BCS:GetWeaponSkill("Guns")
-	elseif weaponType == "Thrown" then
-		return BCS:GetWeaponSkill("Thrown")
-	elseif weaponType == "Wands" then
-		return BCS:GetWeaponSkill("Wands")
+	if weaponType == L["Daggers"] then
+		return BCS:GetWeaponSkill(L["Daggers"])
+	elseif weaponType == L["One-Handed Swords"] then
+		return BCS:GetWeaponSkill(L["Swords"])
+	elseif weaponType == L["Two-Handed Swords"] then
+		return BCS:GetWeaponSkill(L["Two-Handed Swords"])
+	elseif weaponType == L["One-Handed Axes"] then
+		return BCS:GetWeaponSkill(L["Axes"])
+	elseif weaponType == L["Two-Handed Axes"] then
+		return BCS:GetWeaponSkill(L["Two-Handed Axes"])
+	elseif weaponType == L["One-Handed Maces"] then
+		return BCS:GetWeaponSkill(L["Maces"])
+	elseif weaponType == L["Two-Handed Maces"] then
+		return BCS:GetWeaponSkill(L["Two-Handed Maces"])
+	elseif weaponType == L["Staves"] then
+		return BCS:GetWeaponSkill(L["Staves"])
+	elseif weaponType == L["Polearms"] then
+		return BCS:GetWeaponSkill(L["Polearms"])
+	elseif weaponType == L["Fist Weapons"] then
+		return BCS:GetWeaponSkill(L["Unarmed"])
+	elseif weaponType == L["Bows"] then
+		return BCS:GetWeaponSkill(L["Bows"])
+	elseif weaponType == L["Crossbows"] then
+		return BCS:GetWeaponSkill(L["Crossbows"])
+	elseif weaponType == L["Guns"] then
+		return BCS:GetWeaponSkill(L["Guns"])
+	elseif weaponType == L["Thrown"] then
+		return BCS:GetWeaponSkill(L["Thrown"])
+	elseif weaponType == L["Wands"] then
+		return BCS:GetWeaponSkill(L["Wands"])
 	end
 	-- no weapon equipped
-	return BCS:GetWeaponSkill("Unarmed")
+	return BCS:GetWeaponSkill(L["Unarmed"])
 end
 
 function BCS:GetItemTypeForSlot(slot)

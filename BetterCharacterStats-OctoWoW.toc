@@ -1,0 +1,12 @@
+## Interface: 11200
+## Title: BetterCharacterStats[|cff3fcf26Octo|r]
+## Author: moh, Bennylava, Lexie, Spit, Pepopo, MarcelineVQ, Path Of Denchik
+## Version: 1.16
+## Notes: Improved character statistics inside Character Info panel.
+## SavedVariablesPerCharacter: BCSConfig
+
+Localization\enUS.lua
+Localization\ruRU.lua
+helper.lua
+BetterCharacterStats.lua
+BetterCharacterStats.xml

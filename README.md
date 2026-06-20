@@ -1,4 +1,4 @@
-# BetterCharacterStats for Turtle WoW
+# BetterCharacterStats for Octo WoW
 This addon shows your character stats that are not present in default UI.<br>
 This version is designed specifically for TurtleWoW and its custom changes.
 ## Features
@@ -16,5 +16,7 @@ This version is designed specifically for TurtleWoW and its custom changes.
 3. Restart the game
  
 ## Thanks to original author and all contributors
-Moh, Bennylava, Lexie, Spit, Pepopo
+Moh, Bennylava, Lexie, Spit, Pepopo, Otari98
 
+## Localization
+To add a new localization or fix a mistake, write in the Discord topic or create a new pull request.
