@@ -5,6 +5,8 @@ BCS["L"] = {
 
 	["%+(%d+)%% Critical Strike"] = "%+(%d+)%% Critical Strike",
 	["([%d.]+)%% chance to crit"] = "([%d.]+)%% chance to crit",
+	["Attack"] = "Attack",
+	MELEE_CRIT_TOOLTIP_PATTERN = "[Cc]rit",
 
 	["^Set: Improves your chance to hit by (%d)%%."] = "^Set: Improves your chance to hit by (%d)%%.",
 	["^Set: Improves your chance to get a critical strike with spells by (%d)%%."] = "^Set: Improves your chance to get a critical strike with spells by (%d)%%.",

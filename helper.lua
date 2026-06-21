@@ -1358,22 +1358,34 @@ function BCS:GetSpellHitRating()
 end
 
 function BCS:GetCritChance()
+	local function ParseCritChance(text)
+		if not strfind(text, L.MELEE_CRIT_TOOLTIP_PATTERN) then
+			return nil
+		end
+
+		local _, _, value = strfind(text, "([%d.,]+)%%")
+		if value then
+			value = gsub(value, ",", ".")
+			return tonumber(value)
+		end
+	end
+
 	local crit = 0
 	-- Spellbook
 	for tab = 1, GetNumSpellTabs() do
 		local _, _, offset, numSpells = GetSpellTabInfo(tab)
-		for spell = 1, numSpells do
-			local currentPage = ceil(spell / SPELLS_PER_PAGE)
-			local SpellID = spell + offset + (SPELLS_PER_PAGE * (currentPage - 1))
-			BCS_Tooltip:SetSpell(SpellID, BOOKTYPE_SPELL)
-			for line = 1, BCS_Tooltip:NumLines() do
-				local left = _G[BCS_Prefix .. "TextLeft" .. line]
-				local text = left:GetText()
-				if text then
-					local _, _, value = strfind(text, L["([%d.]+)%% chance to crit"])
-					if value then
-						crit = crit + tonumber(value)
-						break
+		for spell = offset + 1, offset + numSpells do
+			local spellName = GetSpellName(spell, BOOKTYPE_SPELL)
+			if spellName == L["Attack"] or spellName == ATTACK then
+				BCS_Tooltip:SetSpell(spell, BOOKTYPE_SPELL)
+				for line = 1, BCS_Tooltip:NumLines() do
+					local left = _G[BCS_Prefix .. "TextLeft" .. line]
+					local text = left:GetText()
+					if text then
+						local value = ParseCritChance(text)
+						if value then
+							return value
+						end
 					end
 				end
 			end

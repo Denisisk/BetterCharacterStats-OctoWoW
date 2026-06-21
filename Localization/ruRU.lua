@@ -11,6 +11,8 @@ L.SET_PATTERN = "(.+) %(%d/%d%)"
 -- Common item, set, talent and aura tooltip patterns.
 L["%+(%d+)%% Critical Strike"] = "%+(%d+)%% к вероятности критического удара"
 L["([%d.]+)%% chance to crit"] = "вероятность критического эффекта: ([%d.]+)%%"
+L["Attack"] = "Атака"
+L.MELEE_CRIT_TOOLTIP_PATTERN = "[Кк]рит"
 
 L["^Set: Improves your chance to hit by (%d)%%."] = "Комплект: .*вероятность попадания.*на (%d)%%"
 L["^Set: Improves your chance to get a critical strike with spells by (%d)%%."] = "Комплект: .*вероятность критического эффекта.*заклинани.*на (%d)%%"
